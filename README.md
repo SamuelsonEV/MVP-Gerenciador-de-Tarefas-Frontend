@@ -27,7 +27,7 @@ docker run -dp 80:80 personal-website:v1
 
 ## API Externa pública
 
-A API pública gratuita utilizada se chama [TextDB](https://textdb.dev) e é usada para compartilhar dados no formato de texto.  
+A API [open-source](https://github.com/bontaq/textdb) pública gratuita utilizada se chama [TextDB](https://textdb.dev) e é usada para compartilhar dados no formato de texto.
 Esta API utiliza um UUID V4 para identificar os dados compartilhados via post.  
   
 Quando este website é carregado ele gera um UUID V4 único para este propósito. Quando
