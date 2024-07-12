@@ -25,6 +25,22 @@ docker build -t personal-website:v1 .
 docker run -dp 80:80 personal-website:v1
 ```
 
+## API Externa pública
+
+A API pública gratuita utilizada se chama [TextDB](https://textdb.dev) e é usada para compartilhar dados no formato de texto.  
+Esta API utiliza um UUID V4 para identificar os dados compartilhados via post.  
+  
+Quando este website é carregado ele gera um UUID V4 único para este propósito. Quando
+o botão de compartilhar (share) é acionado, o link de acesso à lista de tarefas é copiado, 
+tendo o formato ```https://textdb.dev/data/<myUUID>```.
+Com o link no clipboard é possível compartilhá-lo facilmente.
+
+
+### Rotas da API Externa
+
+- [POST] `https://textdb.dev/api/data/<myUUID>`
+  
+
 ## Notas de Versão
 
 ### Versão 1.0.0 (julho/2024)
